@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.hover-link:hover {
+    color: #c0a439;
+}
+
+.nav-me {
+    background: rgba(96, 62, 161, 0.54);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    border: 1px solid rgba(96, 62, 161, 0.3);
+}
+
+.coin-item {
+    background: rgba(118, 52, 249, 0.256);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.6px);
+    -webkit-backdrop-filter: blur(4.6px);
+    border: 1px solid rgba(118, 52, 249, 0.495);
+}
+
+.greenPrc{
+    color: #007b0077;
+}
+
+.redPrc{
+    color: red;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/main.min.css" />
+        <link rel="stylesheet" href="../css/font.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+        <link rel="icon" href="../Assets/favicon.ico" type="image/x-icon" />
+        <title>RezCoin - Exchange</title>
+    </head>
+    <body style="background-color: #c6b4fe">
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg fs-4 py-1 fixed-top nav-me">
+            <div class="container">
+                <a class="navbar-brand fs-1" href="#" style="font-weight: 500">
+                    <i class="fa-brands fa-bitcoin text-gold"></i>
+                    Rez<span class="text-gold">Coin</span>
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-0 mx-sm-3">
+                            <a class="nav-link hover-link" href="../crypto.html" style="font-weight: 500"
+                                ><i class="fa-brands fa-bitcoin"></i> Coins</a
+                            >
+                        </li>
+                        <li class="nav-item mx-0 mx-sm-3">
+                            <a class="nav-link hover-link" aria-current="page" href="#" style="font-weight: 500"
+                                ><i class="fa-solid fa-arrows-rotate"></i> Exchange</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main tag -->
+        <main class="mb-4">
+
+            <div>
+                <h1 class="text-center mt-9 text-gold">Cryptocurrency Rates Calculator</h1>
+            </div>
+            <div class="container main-content">
+                <!-- Page Content goes here -->
+                <div class="row" >
+                    <form class="col" id="form">
+                        <div class="row">
+                            <div class="form">
+                                <div class="input-field col s12 w-50 mx-auto">
+                                    <label class="fs-11 text-muted mb-2">Currency</label>
+                                        <select class="form-select " id="currency">
+                                            <option value="" disabled selected>- Select Currency - </option>
+                                            <option value="USD">Dollar</option>
+                                            <option value="GBP">Pound</option>
+                                            <option value="EUR">Euro</option>
+                                            <option value="JPY">Yen</option>
+                                            <option value="CHY">Yuan</option>
+                                            <option value="TRY">Turkish Lira</option>
+                                            <option value="KRW">Won</option>
+                                        </select>
+                                </div>    
+                                <div class="input-field col w-50 mx-auto mt-3">
+                                    <label class="fs-11 text-muted mb-2">Cryptocurrency</label>
+                                    <select class="form-select " id="cryptocurrency">
+                                        <option value="" disabled selected>- Select Cryptocurrency -</option>
+                                        <option value="BTC">Bitcoin</option>
+                                        <option value="ETH">Ethereum</option>
+                                        <option value="USDT">Tether</option>
+                                        <option value="USDC">USD Coin</option>
+                                        <option value="BNB">Binance Coin</option>
+                                        <option value="BUSD">Binance USD</option>
+                                        <option value="XRP">XRP</option>
+                                        <option value="ADA">Cardano</option>
+                                        <option value="SOL">Solana</option>
+                                        <option value="DOGE">Dogecoin</option>
+                                    </select>
+                                    
+                                </div>
+                                <div class="col w-50 mx-auto mt-4">
+                                    <button id="btnExc" class="btn btn-gold w-100" type="submit" name="action">Get Valuation
+                                        <i class="fa-solid fa-rotate"></i>
+                                    </button>
+                                </div>
+                                <div class="messages"></div>
+                                <div class="spinner mx-auto w-50 mt-3 text-center"></div>
+                                <div id='exchangeResult'></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+        </main>
+        <!-- Scripts from JavaScript folder -->
+        <script src="../JavaScript/cryptoAPI.js"></script>
+        <script src="../JavaScript/ui.js"></script>
+        <script src="../JavaScript/exchange.js"></script>
+
+        <!-- scripts from Bootstrap and popper and jQuarry -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    </body>
+</html>

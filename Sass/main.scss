@@ -1,0 +1,44 @@
+// custom variables
+
+
+// import functions and variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// theme colors
+$custom-theme-colors: (
+    "altlight": #c6b4fe,
+    "altdark": #603ea1,
+    "gold": #cc9834,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// font size
+$custom-font-sizes: (
+    7: 6rem,
+    8: 19px,
+    9: 14px,
+    10: 24px,
+    11: 20px,
+);
+
+$font-sizes: map-merge($custom-font-sizes, $font-sizes);
+
+// spacer (margins and paddings)
+$custom-spacers: (
+    6: 4rem,
+    7: 5rem,
+    8: 6rem,
+    9: 7rem,
+    10: 19px,
+    11: 30px,
+    12: 20rem,
+    13: 34px,
+    14: 18rem,
+);
+
+$spacers: map-merge($custom-spacers, $spacers);
+
+// import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
